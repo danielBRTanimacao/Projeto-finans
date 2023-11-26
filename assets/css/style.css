@@ -1,0 +1,5 @@
+@media screen and (max-width: 767px) {
+    .ms-4 {
+        margin: 0 !important;
+    }
+}
