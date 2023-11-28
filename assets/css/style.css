@@ -1,41 +1,40 @@
 @media screen and (max-width: 767px) {
-    .ms-4 {
-        margin: 0 !important;
-    }
+  .ms-4 {
+    margin: 0 !important;
+  }
 }
 
 #home {
-    background: #ffc107;
-    color: white;
+  background: #ffc107;
+  color: white;
 }
 
 .box {
-    padding: 60px 0;
-    border-bottom: 1px solid #e5e5e5;
+  padding: 60px 0;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 footer p a {
-    margin: 5px 15px;
+  margin: 5px 15px;
 }
 
 .form-signin {
-    max-width: 330px;
-    padding: 1rem;
-  }
+  max-width: 330px;
+  padding: 1rem;
+}
   
-  .form-signin .form-floating:focus-within {
-    z-index: 2;
-  }
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
   
-  .form-signin input[type="email"] {
-    margin-bottom: -1px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
   
-  .form-signin input[type="password"] {
-    margin-bottom: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-  }
-  
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
