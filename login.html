@@ -38,19 +38,29 @@
         </div>
       </nav>
     </header> <!--FIm cabeçalho-->
-    <section class="container text-center border rounded mt-4"> <!-- Area login-->
-      <form class="m-5">
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Endereço de email</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com mais ninguém.</div>
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <button type="submit" class="btn btn-outline-dark">Submit</button>
-      </form>
+    <section class="mt-5"> <!-- Area login-->
+      <main class="form-signin w-100 m-auto">
+        <form>
+          <h1 class="h3 mb-3 fw-normal">Login</h1>
+          <div class="form-floating">
+            <input type="email" class="form-control" id="floatingInput" placeholder="email@example.com">
+            <label for="floatingInput">Endereço de email</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Senha</label>
+          </div>
+      
+          <div class="form-check text-start my-3">
+            <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              lembrar de mim
+            </label>
+          </div>
+          <button class="btn btn-outline-warning w-100 py-2" type="submit">Entrar</button>
+          <p class="mt-5 mb-3 text-body-secondary">tente por </p>
+        </form>
+      </main>
     </section> <!-- Fim area login-->
     <footer class="mt-4 mb-4">
       <div class="container text-center">
