@@ -1,71 +1,168 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Finans - Finanças pessoais</title>
-    <link rel="shortcut icon" type="imagex/png" href="assets/img/dollar.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-  </head>
-  <body>
-    <header> <!--Inicio cabeçalho-->
-      <nav class="navbar navbar-expand-sm navbar-light bg-warning">
-        <div class="container">
-          <a href="#" class="navbar-brand">
-            <img src="assets/img/logo.png" width="142" alt="finans-img-logo">
-          </a>
-          <div class="dropdown">
-            <a href="#" class="btn btn-outline-light ms-4 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="bi bi-person-circle fs-2"></i>
-            </a> <!-- icon pessoa-->
-            <ul class="dropdown-menu dropdown-menu-end">
-              <li><a class="dropdown-item" href="index.html">Home</a></li>
-              <li><a class="dropdown-item" href="#">Pix</a></li>
-              <li><a class="dropdown-item" href="#">Boletos</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item text-danger" href="#">Sair</a></li> <!--Aparece um modal-->
-            </ul>
-          </div>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Finans - Finanças pessoais</title>
+        <link
+            rel="shortcut icon"
+            type="imagex/png"
+            href="assets/img/dollar.png"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+        />
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <header>
+            <!--Inicio cabeçalho-->
+            <nav class="navbar navbar-expand-sm navbar-light bg-warning">
+                <div class="container">
+                    <a href="#" class="navbar-brand">
+                        <img
+                            src="assets/img/logo.png"
+                            width="142"
+                            alt="finans-img-logo"
+                        />
+                    </a>
+                    <div class="dropdown">
+                        <a
+                            href="#"
+                            class="btn text-light ms-4 dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            <i class="bi bi-person-circle fs-2"></i>
+                        </a>
+                        <!-- icon pessoa-->
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                                <a class="dropdown-item" href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#pix-area"
+                                    >Pix</a
+                                >
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Boletos</a>
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                                <a
+                                    class="dropdown-item text-danger"
+                                    href="#"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#exitModal"
+                                >
+                                    Sair
+                                </a>
+                            </li>
+                            <!--Aparece um modal-->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Modal exit-->
+        <div
+            class="modal fade"
+            id="exitModal"
+            tabindex="-1"
+            aria-labelledby="exitModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exitModalLabel">
+                            Sair da conta
+                        </h1>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        Você realmente deseja sair da conta?
+                    </div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-success"
+                            data-bs-dismiss="modal"
+                        >
+                            Manter conta
+                        </button>
+                        <a
+                            href="index.html"
+                            type="button"
+                            class="btn btn-danger"
+                        >
+                            Sair da conta
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </nav>
-    </header> <!--FIm cabeçalho-->
-    <section class="container mt-5 border-top border-warning rounded-top border-5"> <!--BEm vindo de volta-->
-      <div class="row">
-        <img class="col-md-7 img-fluid" src="assets/img/undraw_Powerful_re_frhr.png" alt="img-vetor">
-        <h1 class="col-md-5 d-flex justify-content-center align-items-center display-1">Bem vindo, Usuario!</h1>
-      </div>
-    </section> <!-- Fim Bem vindo de volta-->
+        <!--FIm cabeçalho-->
+        <section class="container mt-5">
+            <!--BEm vindo de volta-->
+            <div class="row">
+                <img
+                    class="col-md-7 img-fluid"
+                    src="assets/img/undraw_Powerful_re_frhr.png"
+                    alt="img-vetor"
+                />
+                <h1
+                    class="col-md-5 d-flex justify-content-center align-items-center display-1"
+                >
+                    Bem vindo, Usuario!
+                </h1>
+            </div>
+        </section>
+        <!-- Fim Bem vindo de volta-->
 
-    <section> <!--Area Pix-->
-
-    </section> <!-- Fim Area pix-->
-    <footer class="mt-4 mb-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <p>
-              <a href="index.html" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Home</a>
-              <a href="" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Recursos</a>
-              <a href="" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Benefícios</a>
-              <a href="" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Preços</a>
-            </p>
-          </div>
-          <div class="col-md-4 d-flex justify-content-end">
-            <a href="https://www.linkedin.com/in/daniel-tenório-6471b0244/" class="btn btn-outline-dark ms-2">
-              <i class="bi bi-linkedin"></i>
-            </a>
-            <a href="https://github.com/danielBRTanimacao" class="btn btn-outline-dark ms-2">
-              <i class="bi bi-github"></i>
-            </a>
-            <a href="https://danielbrtanimacao.github.io/danieltenorioportfolio/" class="btn btn-outline-dark ms-2">
-              <i class="bi bi-file-earmark-text-fill"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  </body>
+        <section id="pix-area"><!--Area Pix--></section>
+        <!-- Fim Area pix-->
+        <footer class="mt-4 container">
+            <div class="d-flex justify-content-end">
+                <a
+                    href="https://www.linkedin.com/in/daniel-tenório-6471b0244/"
+                    class="btn btn-outline-dark ms-2"
+                >
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a
+                    href="https://github.com/danielBRTanimacao"
+                    class="btn btn-outline-dark ms-2"
+                >
+                    <i class="bi bi-github"></i>
+                </a>
+                <a
+                    href="https://danielbrtanimacao.github.io/danieltenorioportfolio/"
+                    class="btn btn-outline-dark ms-2"
+                >
+                    <i class="bi bi-file-earmark-text-fill"></i>
+                </a>
+            </div>
+        </footer>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
